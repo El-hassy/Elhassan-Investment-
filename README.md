@@ -1,27 +1,116 @@
-# Create a directory for the website files
-site_dir = '/mnt/data/elhassan_investment_site'
-os.makedirs(site_dir, exist_ok=True)
-
-# HTML content from the updated website
-html_content = """<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Elhassan Investment</title>
-  <meta name="description" content="Elhassan Investment — trusted financial and investment services.">
-  <script src="https://cdn.tailwindcss.com"></script>
   <style>
-    :root{
-      --green: #1f8a4c;
-      --gold: #cfa34b;
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+    header {
+      background-color: #003366;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      background-color: #0055a5;
+      display: flex;
+      justify-content: center;
+      padding: 10px;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .hero {
+      background-color: #e0e0e0;
+      padding: 60px 20px;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+    .hero p {
+      font-size: 1.2em;
+      margin-bottom: 20px;
+    }
+    .cta-button {
+      background-color: #003366;
+      color: white;
+      padding: 12px 25px;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+    .features {
+      display: flex;
+      justify-content: space-around;
+      padding: 40px 20px;
+      background-color: white;
+    }
+    .feature {
+      width: 30%;
+      text-align: center;
+    }
+    footer {
+      background-color: #003366;
+      color: white;
+      text-align: center;
+      padding: 20px;
     }
   </style>
 </head>
-<body class="antialiased text-gray-800 bg-gray-50">
-  <header class="bg-white shadow-sm">
-    <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-      <a href="#home" class="flex items-center gap-3">
+<body>
+
+  <header>
+    <h1>Elhassan Investment</h1>
+    <p>Empowering Growth Through Strategic Investment</p>
+  </header>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">About Us</a>
+    <a href="#">Services</a>
+    <a href="#">Portfolio</a>
+    <a href="#">Contact</a>
+  </nav>
+
+  <section class="hero">
+    <h1>Welcome to Elhassan Investment</h1>
+    <p>Trusted by SMEs, entrepreneurs, and communities across Nigeria.</p>
+    <a href="#" class="cta-button">Get Started</a>
+  </section>
+
+  <section class="features">
+    <div class="feature">
+      <h3>SMEDAN Registered</h3>
+      <p>Officially recognized and compliant with Nigerian standards.</p>
+    </div>
+    <div class="feature">
+      <h3>Experienced Team</h3>
+      <p>Years of expertise in investment and business development.</p>
+    </div>
+    <div class="feature">
+      <h3>Sector Diversity</h3>
+      <p>Real Estate, Agriculture, Startups, and more.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Elhassan Investment. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
+<a href="#home" class="flex items-center gap-3">
         <img src="1000181877.png" alt="Elhassan Investment Logo" class="h-12">
         <div>
           <h1 class="text-lg font-semibold">Elhassan Investment</h1>
